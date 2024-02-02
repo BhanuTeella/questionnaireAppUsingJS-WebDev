@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result Page</title>
+  <script>
+    function getScoreFromURL() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var score = urlParams.get('score');
+      document.getElementById('score').textContent = score;
+    }
+    
+    window.onload = getScoreFromURL;
+  </script>
+</head>
+<body>
+  <h1>Result Page</h1>
+  
+  <p>Your score is: <span id="score"></span></p>
+</body>
+</html>

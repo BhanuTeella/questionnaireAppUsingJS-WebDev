@@ -1,0 +1,72 @@
+/* Set the font family and size for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Center the questionnaire div horizontally */
+#questionnaire {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 1000px !important;
+  background-color: #fff;
+  padding: 25px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the topic divs */
+.topic {
+  display: none;
+}
+
+.topic.active {
+  display: block;
+  
+}
+
+.topic h1 {
+  margin-top: 0;
+}
+
+/* Style the question paragraphs */
+.topic p {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Style the radio button inputs and labels */
+.topic input[type="radio"] {
+  margin-right: 0.5em;
+}
+
+.topic label {
+  margin-right: 1em;
+}
+
+/* Style the submit button */
+.topic button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.topic button:hover {
+  background-color: #3e8e41;
+}
+
+.topic button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
